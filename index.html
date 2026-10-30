@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17324d">
+    <meta name="description" content="Guía para elaborar y presentar el segundo avance de investigación.">
+    <title>Guía de investigación | EC2</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a class="brand" href="./index.html" aria-label="Inicio de la guía EC2">
+                <span class="brand-mark" aria-hidden="true">EC2</span>
+                <span class="brand-text">
+                    <strong>Guía de investigación</strong>
+                    <small>Segundo avance</small>
+                </span>
+            </a>
+
+            <div class="topbar-label">Orientación para estudiantes</div>
+        </header>
+
+        <div class="layout">
+            <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+                <div class="sidebar-heading">
+                    <p class="eyebrow">Contenido</p>
+                    <h2>Ruta del trabajo</h2>
+                </div>
+
+                <nav class="section-nav" id="section-nav" aria-label="Apartados del trabajo">
+                    <!-- Los apartados se generan desde JavaScript. -->
+                </nav>
+
+                <div class="sidebar-note">
+                    <strong>Consejo</strong>
+                    <p>Avanza apartado por apartado y revisa la lista antes de entregar.</p>
+                </div>
+            </aside>
+
+            <main class="main-content" id="main-content">
+                <div class="content-toolbar">
+                    <div>
+                        <p class="eyebrow">Guía paso a paso</p>
+                        <h1>Construye tu segundo avance</h1>
+                    </div>
+                    <span class="content-status" id="content-status" role="status" aria-live="polite">
+                        Cargando materiales…
+                    </span>
+                </div>
+
+                <section class="welcome-card" aria-labelledby="welcome-title">
+                    <div class="welcome-icon" aria-hidden="true">01</div>
+                    <div>
+                        <p class="eyebrow">Empieza aquí</p>
+                        <h2 id="welcome-title">Organiza tu trabajo antes de redactar</h2>
+                        <p>
+                            Selecciona un apartado del menú para revisar qué debe incluir,
+                            cómo desarrollarlo y qué comprobar antes de continuar.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section-content" id="section-content" aria-live="polite" aria-busy="true">
+                    <!-- El contenido del apartado seleccionado se genera desde JavaScript. -->
+                </section>
+
+                <footer class="page-footer">
+                    <p>Consulta también la ficha EC2, la rúbrica y los materiales indicados por tu docente.</p>
+                </footer>
+            </main>
+        </div>
+
+        <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>

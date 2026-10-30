@@ -1,0 +1,123 @@
+@media (max-width: 900px) {
+    :root {
+        --sidebar-width: 270px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        z-index: 15;
+        top: 76px;
+        bottom: 0;
+        left: 0;
+        width: min(var(--sidebar-width), 88vw);
+        height: auto;
+        transform: translateX(-105%);
+        transition: transform 200ms ease;
+        box-shadow: 12px 0 30px rgba(12, 31, 49, 0.13);
+    }
+
+    body.menu-open .sidebar {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-content {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        min-height: 68px;
+        gap: 12px;
+        padding: 10px 14px;
+    }
+
+    .brand-mark {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text strong {
+        font-size: 0.92rem;
+    }
+
+    .brand-text small {
+        font-size: 0.73rem;
+    }
+
+    .topbar-label {
+        display: none;
+    }
+
+    .sidebar {
+        top: 68px;
+    }
+
+    .sidebar-backdrop {
+        top: 68px;
+    }
+
+    .main-content {
+        padding: 24px 16px 22px;
+    }
+
+    .content-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .content-status {
+        max-width: 100%;
+    }
+
+    .welcome-card {
+        gap: 13px;
+        padding: 18px;
+    }
+
+    .welcome-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+    }
+
+    .section-heading {
+        gap: 12px;
+    }
+
+    .section-number {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+    }
+
+    .material-card,
+    .checklist-card,
+    .resource-card {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
